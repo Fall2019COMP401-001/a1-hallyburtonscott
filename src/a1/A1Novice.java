@@ -38,7 +38,7 @@ public class A1Novice {
 				values[j+1] = scan.nextDouble();
 			}
 			// Keeps track of the running total of each customer 
-			double individual_total = 0; 
+			double individual_total = 0.00; 
 			
 			// Updates the total 
 			for(int j=0; j<values.length; j+=2)	{
@@ -47,7 +47,7 @@ public class A1Novice {
 			}
 			
 			// Prints out each line of relevant information
-			System.out.println(initial + ". " + last + ": " + individual_total);
+			System.out.println(initial + ". " + last + ": " + String.format("%.2f", (double)individual_total));
 				
 			}
 		// done parsing data
