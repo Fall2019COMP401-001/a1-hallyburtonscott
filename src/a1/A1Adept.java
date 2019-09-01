@@ -31,7 +31,7 @@ public class A1Adept {
 		String[] names = new String[customer_count];
 		
 		// Stores their respective totals
-		double[] totals = new double[count];
+		double[] totals = new double[customer_count];
 		
 		
 		// Fills in the previous two arrays
