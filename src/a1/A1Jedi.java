@@ -50,6 +50,12 @@ public class A1Jedi {
 			}
 			// an array with a 1-1 correspondence with all_atems. Will only contain ones and zeros. 
 			int[] items_bought = new int[all_items.length];
+			
+			// all elts of array are initialized to 0
+			for(int j =0; j<items_bought.length; j++) {
+				items_bought[j] = 0;
+			}
+			
 			for (int j = 0; j < count; j++) {
 				for (int k = 0; k < all_items.length; k++) {
 					if (order[j].equals(all_items[k])) {
@@ -57,10 +63,7 @@ public class A1Jedi {
 						item_occ[k] += nums[j];
 						// relates a 1 to when the customer purchased the corresponding item
 						items_bought[k] = 1;
-					} else { 
-						// if customer did not buy item, value is 0
-						items_bought[k] = 0;
-					}
+					} 
 			
 				}
 			}
